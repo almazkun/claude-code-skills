@@ -5,8 +5,10 @@ Claude Code Skills
 Copy skill directories to your Claude Code Skill directory, usually `~/.claude/skills/`
 ```sh
 git clone git@github.com:almazkun/claude-code-skills.git
-ln -s $(pwd)/claude-code-skills/async-python-django-ninja ~/.claude/skills/async-python-django-ninja
+cd claude-code-skills
+cp -r async-python-django-ninja ~/.claude/skills/
 ```
+
 ## What Are Claude Code Skills?
 
 Skills extend Claude's capabilities by packaging expertise into composable resources, transforming general-purpose agents into specialized agents. Building a skill for an agent is like putting together an onboarding guide for a new hire.
